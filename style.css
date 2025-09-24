@@ -22,40 +22,46 @@ body {
   text-align: right;
 }
 
-.header {
-  background-color: var(--primary-color);
-  color: #fff;
+.navbar {
+  background: rgba(0, 0, 0, 0.5); /* لون الخلفية شبه الشفاف */
+  padding: 15px;
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.navbar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  z-index: 999;
 }
 
-.logo {
-  font-size: 1.5rem;
+.navbar .logo {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
   font-weight: bold;
 }
 
-.nav-links .nav-link {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 2rem;
-  transition: color 0.3s;
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-.nav-links .nav-link:hover {
-  color: var(--accent-color);
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #f7931e; /* لون عند المرور بالماوس */
 }
 
 .hero {
@@ -296,3 +302,4 @@ body {
     }
 
 }
+
