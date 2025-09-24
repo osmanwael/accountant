@@ -98,8 +98,7 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
+    font-size: 3em; /* أو أي حجم مناسب */
 }
 
 .hero-content h2 {
@@ -295,4 +294,5 @@ body {
     50% {
         opacity: 0;
     }
+
 }
